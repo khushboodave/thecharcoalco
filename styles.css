@@ -1,0 +1,203 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+header,footer,
+article,section,
+hgroup,
+figure{
+	display:block;
+}
+@keyframes x{
+			0%{background-color: #99ff99;}
+			25%{background-color: #b3ffb3;}
+			50%{background-color: #ccffcc;}
+			100%{background-color: #e6ffe6;}
+		}
+
+		
+body{
+	font-size:0.825em;
+	color:#fcfcfc;
+	background-color:#355664;
+	font-family:Arial, Helvetica, sans-serif;
+	animation-name: x;
+			animation-direction: alternate;
+			animation-duration: 3s;
+			animation-iteration-count: infinite;
+}
+
+
+@media print{
+	body{
+		background-color: #ccffcc;
+	}
+}
+
+@media screen and (min-width: 500px;)
+{
+	body
+	{
+		background-color: red;
+	}
+}
+
+h1,h2,h3{
+	font-family:"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	text-shadow:0 1px 1px black;
+}
+
+h1{
+	/* The logo text */
+	font-size:3.5em;
+	padding:0.5em 0 0;
+	color: black;
+	text-transform:uppercase;
+}
+
+h1:hover
+{
+	transform: scale(1.1,1.1);
+	transition: transform 4s;
+}
+
+h3:hover
+{
+	transform: scale(1.1,1.1);
+	transition: transform 4s;
+}
+
+h3{
+	/* The slogan text */
+	font-family:forte,"Myriad Pro","Helvetica Neue",Helvetica,Arial,Sans-Serif;
+	font-size:2em;
+	color: black;
+	font-weight:normal;
+	margin:0 0 1em;
+}
+
+
+h2{
+	font-size:xx-large;
+	font-weight:normal;
+	letter-spacing:0.01em;
+	text-transform:uppercase;
+	color: yellow;
+}
+
+p{
+	line-height:1.5em;
+	padding-bottom:1em;
+	font-size: large;
+}
+
+.line{
+	height:1px;
+	background-color:#24404c;
+	border-bottom:1px solid #416371;
+	margin:1em 0;
+	overflow:hidden;
+}
+
+article .line{
+	background-color:#15242a;
+	border-bottom-color:#204656;
+	margin:1.3em 0;
+}
+
+footer .line{
+	margin:2em 0;
+}
+
+nav{
+	background:url(img/gradient_light.jpg) repeat-x 50% 50% #f8f8f8;
+	padding:0 5px;
+	position:absolute;
+	right:0;
+	top:4em;
+	
+	border:1px solid #FCFCFC;
+
+	-moz-box-shadow:0 1px 1px #333333;
+	-webkit-box-shadow:0 1px 1px #333333;
+	box-shadow:0 1px 1px #333333;
+}
+
+.clear:after{
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+article,figure{
+	-moz-border-radius:10px;
+	-webkit-border-radius:10px;
+	border-radius:10px;
+}
+
+
+#page{
+	width:960px;
+	margin:0 auto;
+	position:relative;
+}
+
+article{
+	background-color:#213E4A;
+	margin:3em 0;
+	padding:20px;
+	
+	text-shadow:0 2px 0 black;
+}
+
+figure{
+	border:3px solid #142830;
+	float:right;
+	height:340px;
+	margin-left:15px;
+	overflow:hidden;
+	width:500px;
+}
+
+figure:hover{
+	transform: scale(1.1,1.1);
+	transition: transform 4s;
+}
+
+figure img{
+	margin-left:-60px;
+}
+
+footer{
+	margin-bottom:30px;
+	text-align:center;
+	font-size:0.825em;
+	color: black;
+}
+
+
+footer p{
+	margin-bottom:-2.5em;
+	position:relative;
+}
+
+footer a{
+	color:#cccccc;
+	background-color:#213e4a;
+	display:block;
+	padding:2px 4px;
+	z-index:100;
+	position:relative;
+}
+
+footer a:hover{
+	text-decoration:none;
+	background-color:red;
+}
+
+footer a.up{
+	float:right;
+}
